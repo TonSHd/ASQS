@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asqs"
+version = "0.1.0"
+description = "ASQS - Application-Specific Quantum Simulation: Bitaxe/SHA-256 ASIC as a Born-rule oracle for auditable stabilizer-circuit sampling"
+readme = "../README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "ASQS Project" }]
+dependencies = []  # stdlib only
+
+[project.scripts]
+asqs = "asqs.cli:main"
+
+[tool.setuptools]
+packages = ["asqs"]

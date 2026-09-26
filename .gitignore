@@ -1,0 +1,11 @@
+build/
+outputs/
+notvalidated/
+Datasets/
+
+__pycache__/
+*.py[cod]
+
+status.json
+crosscheck_report.json
+ledger.jsonl

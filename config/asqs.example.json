@@ -1,0 +1,34 @@
+{
+  "ip": "0.0.0.0",
+  "port": 3333,
+  "project_root": ".",
+  "circuit": {
+    "type": "surface_code_memory",
+    "d": 3,
+    "rounds": 3,
+    "noise": {
+      "p1_ppb": 500000,
+      "p2_ppb": 1000000,
+      "pm_ppb": 500000,
+      "pr_ppb": 500000
+    }
+  },
+  "shots_per_share": 16,
+  "validation_shots": 1024,
+  "validation_every_n_shares": 100,
+  "max_shares_per_sec": 1.0,
+  "difficulty_mode": "adaptive",
+  "init_difficulty": "256",
+  "min_difficulty": "0.001",
+  "max_difficulty": "1099511627776",
+  "job_interval_s": 30,
+  "local_time": false,
+  "enable_benchmark": true,
+  "benchmark_duration_s": 180,
+  "gate": {
+    "min_detector_flips": 1,
+    "max_detector_flip_rate": 0.25,
+    "min_distinct_syndromes": 2,
+    "min_distinct_outcomes": 2
+  }
+}
